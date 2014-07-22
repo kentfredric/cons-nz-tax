@@ -9,7 +9,7 @@ use utf8;
 
 my $new_flat_tax = ( shift @ARGV ) / 100;
 
-printf qq[%s,%s,%s,%s], "Gross Annual Income",
+printf qq[%s,%s,%s,%s\n], "Gross Annual Income",
                        ( sprintf "Weekly Savings under new Scheme at %3.2f%%", $new_flat_tax * 100 ),
                        "Weekly Income under new scheme",
                        "Weekly Income under old scheme";
